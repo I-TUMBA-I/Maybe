@@ -9,7 +9,7 @@ struct vagon{
 };
 
 struct train {
-    int NunPeople;
+    int NumPeople;
     int health;
     int fuel;
 
