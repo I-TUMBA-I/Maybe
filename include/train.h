@@ -1,7 +1,7 @@
+#pragma once
 #include <vector>
 #include "people.h"
 #include "objects.h"
-#pragma once
 using namespace std;
 
 struct vagon{
