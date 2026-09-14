@@ -18,7 +18,7 @@ void full(vector<people> &ful){
         p.med = rand() % 101;
         p.health = 100;
         p.cook = rand() % 101;
-        p.strength = rend() % 101;
+        p.strength = rand() % 101;
         ful.push_back(p);
     }
 }

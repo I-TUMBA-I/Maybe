@@ -2,6 +2,7 @@
 #include <vector>
 #include "people.h"
 #include "objects.h"
+
 using namespace std;
 
 struct vagon{
