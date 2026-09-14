@@ -13,7 +13,9 @@ struct train {
     int NumPeople;
     int health;
     int fuel;
+    int capasity;
 
+    vector<obj> objects;
     vector<vagon> vagony;
     vector<people> peoples;
 };
