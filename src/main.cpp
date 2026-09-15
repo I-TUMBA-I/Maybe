@@ -1,4 +1,5 @@
 #include <cstddef>
+#include <ios>
 #include <iostream>
 #include <iterator>
 #include <random>
@@ -18,6 +19,7 @@ int main(){
         cout << t.peoples[i].med << '\n';
         cout << t.peoples[i].cook << '\n';
         cout << t.peoples[i].strength << '\n';
+        cout << "Sex: " << boolalpha << t.peoples[i].man << '\n';
         cout << '\n';
     }
 }

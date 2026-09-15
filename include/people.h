@@ -29,21 +29,35 @@ string randNameG(){
     while (getline(file, line)){
         names.push_back(line);
     }
-    cout << names.size();
     return names[rand() % names.size()];
 }
 
+string randNameB(){
+    ifstream file("include/nameB.txt");
+    if(!file.is_open()){
+        cout << "Can not open file! The file is missing";
+        return "No";
+    }
+    string line;
+    vector<string> names;
+    while (getline(file, line)){
+        names.push_back(line);
+    }
+    return names[rand() % names.size()];
+}
 
 void full(vector<people> &ful){
     for(size_t i = 0; i < 11; i++){
         people p;
-        p.name = randNameG();
         p.engeneering = rand() % 101;
         p.man = rand() % 2;
         p.med = rand() % 101;
         p.health = 100;
         p.cook = rand() % 101;
         p.strength = rand() % 101;
+        if(p.man == true){
+            p.name = randNameB();
+        }else {p.name = randNameG();}
         ful.push_back(p);
     }
 }
