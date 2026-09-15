@@ -1,7 +1,9 @@
 #pragma once
+#include <string>
 using namespace std;
 
 struct people{
+    string name;
     int health;
     int engeneering;
     int med;
