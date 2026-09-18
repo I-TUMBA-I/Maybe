@@ -55,9 +55,14 @@ void full(vector<people> &ful){
         p.health = 100;
         p.cook = rand() % 101;
         p.strength = rand() % 101;
-        if(p.man == true){
-            p.name = randNameB();
-        }else {p.name = randNameG();}
+        switch (p.man){
+            case 1:
+                p.name = randNameB();
+                break;
+            case 0:
+                p.name = randNameG();
+                break;
+        }
         ful.push_back(p);
     }
 }
