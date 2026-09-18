@@ -15,7 +15,7 @@ struct people{
     int med;
     int cook;
     int strength;
-    bool man;
+    bool sex;
 };
 
 string randNameG(){
@@ -46,16 +46,16 @@ string randNameB(){
     return names[rand() % names.size()];
 }
 
-void full(vector<people> &ful){
-    for(size_t i = 0; i < 11; i++){
+void full(vector<people> &ful, int coun){
+    for(int i = 0; i < coun; i++){
         people p;
         p.engeneering = rand() % 101;
-        p.man = rand() % 2;
+        p.sex = rand() % 2;
         p.med = rand() % 101;
         p.health = 100;
         p.cook = rand() % 101;
         p.strength = rand() % 101;
-        switch (p.man){
+        switch (p.sex){
             case 1:
                 p.name = randNameB();
                 break;

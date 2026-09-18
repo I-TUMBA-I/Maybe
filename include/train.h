@@ -1,15 +1,35 @@
 #pragma once
+#include <string>
 #include <vector>
 #include "people.h"
 #include "objects.h"
-
 using namespace std;
 
-struct vagon{
-    int health;
+class carriagi{
+    public:
+        string name;
+        int weight;
 };
 
-struct train {
+class Mediki : public carriagi{
+    public:
+        int maxMed;
+        int MaxPeople;
+};
+
+class CarryWag : public carriagi{
+    public:
+        int maxWeight;
+        int stackNum;
+};
+
+class PeopleWag : public carriagi{
+    public:
+        int maxPeople;
+};
+
+class train {
+public:
     int NumPeople;
     int health;
     int fuel;
