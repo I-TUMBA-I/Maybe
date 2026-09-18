@@ -5,25 +5,25 @@
 #include "objects.h"
 using namespace std;
 
-class carriagi{
+class vagon{
     public:
         string name;
         int weight;
 };
 
-class Mediki : public carriagi{
+class Mediki : public vagon{
     public:
         int maxMed;
         int MaxPeople;
 };
 
-class CarryWag : public carriagi{
+class CarryWag : public vagon{
     public:
         int maxWeight;
         int stackNum;
 };
 
-class PeopleWag : public carriagi{
+class PeopleWag : public vagon{
     public:
         int maxPeople;
 };
