@@ -6,6 +6,4 @@ using namespace std;
 struct obj{
     string name;
     int weight;
-    int MultMed;
-    int MultEng;
 };

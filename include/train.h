@@ -5,35 +5,30 @@
 #include "objects.h"
 using namespace std;
 
-class vagon{
-    public:
-        string name;
-        int weight;
+struct vagon{
+    string name;
+    int weight;
 };
 
-class Mediki : public vagon{
-    public:
-        int maxMed;
-        int MaxPeople;
+struct Mediki : vagon{
+    int maxMed;
+    int MaxPeople;
 };
 
-class CarryWag : public vagon{
-    public:
-        int maxWeight;
-        int stackNum;
+struct CarryWag : vagon{
+    int maxWeight;
+    int stackNum;
+    vector<obj> objects;
 };
 
-class PeopleWag : public vagon{
-    public:
-        int maxPeople;
+struct PeopleWag : vagon{
+    int maxPeople;
+    vector<people> peoples;
 };
 
-class train {
-public:
+struct train {
     int NumPeople;
     int health;
 
-    vector<obj> objects;
     vector<vagon> vagony;
-    vector<people> peoples;
 };
