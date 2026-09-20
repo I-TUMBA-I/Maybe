@@ -32,8 +32,6 @@ class train {
 public:
     int NumPeople;
     int health;
-    int fuel;
-    int capasity;
 
     vector<obj> objects;
     vector<vagon> vagony;

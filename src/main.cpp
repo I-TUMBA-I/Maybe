@@ -11,5 +11,7 @@ int main(){
     t.peoples = tr;
     vector<obj> ob;
     t.objects = ob;
-
+    Mediki Med;
+    CarryWag inv;
+    PeopleWag Peop;
 }
