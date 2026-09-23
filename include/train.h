@@ -6,13 +6,12 @@
 using namespace std;
 
 struct vagon{
-    string name;
     int weight;
+    int MaxPeople;
 };
 
-struct Mediki : vagon{
+struct MedikiWag : vagon{
     int maxMed;
-    int MaxPeople;
 };
 
 struct CarryWag : vagon{
@@ -22,13 +21,9 @@ struct CarryWag : vagon{
 };
 
 struct PeopleWag : vagon{
-    int maxPeople;
     vector<people> peoples;
 };
 
-struct train {
-    int NumPeople;
+struct Train {
     int health;
-
-    vector<vagon> vagony;
 };
