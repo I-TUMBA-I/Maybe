@@ -16,7 +16,7 @@ int main(){
     train.health = 100;
     Med.maxMed = 50;
     Peop.peoples = tr;
-    Peop.maxPeople = 15;
+    Peop.MaxPeople = 15;
     while (true){
 
     }
