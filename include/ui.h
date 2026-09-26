@@ -1,11 +1,17 @@
 #pragma once
+#include <cstdio>
 #include <iostream>
 #include <string>
 
-int StartMenu(){
-    cout << "1.Start the game\n"
-    << "2.Continue the game\n"
-    << "3.Settings\n"
-    << "4.Quit\n";
-    return 1;
+char login(){
+    cout << "1.Start Game (automaticly saves)\n"
+    << "2.Settings (no settings in beta)\n"
+    << "3.Quit the Game";
+    char ans = getchar();
+    return ans;
+}
+
+void settings(){
+    //settings
+    cout << "Open settings!";
 }
