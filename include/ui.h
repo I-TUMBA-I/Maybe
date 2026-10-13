@@ -12,6 +12,5 @@ char login(){
 }
 
 void settings(){
-    //settings
     cout << "Open settings!";
 }

@@ -1,5 +1,6 @@
 #include <cstddef>
 #include <ctime>
+#include <float.h>
 #include <string>
 #include "../include/train.h"
 #include "../include/add.h"
@@ -19,19 +20,14 @@ int main(){
     Med.maxMed = 50;
     Peop.peoples = tr;
     Peop.MaxPeople = 15;
-    ans = login();
-    switch (stoi(ans)){
-        case 1:
-            cout << "Game starts";
-            while(true){
-                //game code
-            }
-            break;
-        case 2:
-            settings();
-            break;
-        default:
-            cout << "Quit!";
-            break;
-    }
+    clearScreen();
+    text_time("This game is about surviving in train, when its zombie appocalyppse", 14);
+    cout << '\n';
+    sec(1.5f);
+    text_time("All the persons with you in normal condition", 14);
+    sec(1.0f);
+    cout << '\n';
+    text_time("Or is they?", 20);
+    clearScreen();
+    login();
 }
