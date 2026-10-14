@@ -3,12 +3,13 @@
 #include <iostream>
 #include <string>
 
-char login(){
-    cout << "1.Start Game (automaticly saves)\n"
-    << "2.Settings (no settings in beta)\n"
-    << "3.Quit the Game";
-    char ans = getchar();
-    return ans;
+int login(){
+    cout << "Welcome!\n"
+    << "1.Start the game\n"
+    << "2.Open save\n"
+    << "3.Settings\n"
+    << "4.Quit\n";
+    return 0;
 }
 
 void settings(){
