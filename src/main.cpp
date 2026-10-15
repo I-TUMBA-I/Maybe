@@ -3,14 +3,13 @@
 #include <float.h>
 #include <string>
 #include "../include/train.h"
-#include "../include/add.h"
 #include "../include/ui.h"
 using namespace std;
 using str = string;
 
 int main(){
     clearScreen();
-    bool isFirst;
+    bool isFirst = false;
     str ans;
     Train train;
     MedikiWag Med;
@@ -38,5 +37,4 @@ int main(){
         sec(4.0f);
         clearScreen();
     }
-
 }
